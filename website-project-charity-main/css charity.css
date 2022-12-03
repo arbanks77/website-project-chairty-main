@@ -1,5 +1,5 @@
 * {
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(239, 227, 218, 0.914);
 }
 
@@ -18,7 +18,6 @@ header a {
 }
 
 img#Logo {
-    
     display: incline-block;
     position: fixed;
     top: 0;
@@ -32,11 +31,8 @@ nav a{
     display: flex;
     flex-direction: column;
     background-color:rgb(66, 69, 67);
-     width: 20%; 
+    width: 20%; 
     padding: 5px;
-    /* position: relative;
-    overflow: hidden; */
-    color: rgb(200, 184, 184);
     text-decoration: none;
     font-size: 18px;
     background-color: rgb(4, 6, 4);
@@ -50,12 +46,15 @@ nav ul {
     list-style-type: none;
 }
 
-
 nav a:hover {
     opacity: 1;
     letter-spacing: 10px;
     font-weight: bold;
-    color: black;
+    color: rgb(102, 47, 15);
+}
+
+nav a:visited{
+    color:rgba(239, 227, 218, 0.914); 
 }
 
 h1#header1{
@@ -90,7 +89,7 @@ p.textp{
     font-size: 20px;
     text-align: center;}
 
-img#zebrasphoto {
+    img#zebrasphoto {
     background-size: 100%;
     height: 600px;
     width: 600px;
@@ -117,11 +116,11 @@ h2{
 }
 
 div#joinusbutton{
-    margin: 10px 0px 0px 30px;
+    margin: 30px 0px 60px 0px;
     padding: 0px;
     align-items: center;
     text-align: center;
-    color: darkred;
+    color: rgb(102, 47, 15);
     
 }
 .page-wrapper {
@@ -136,23 +135,43 @@ input#submit2{
   border-radius: 5px;
   width: 114px;
   height: 37px;
+  border:rgb(40, 179, 75);
 }
 
-donation page
-
-/*div.input-group-1 {
+input#submit2:active {
+    background-color: #fff;
+    border: 5px solid #427bb8;
     color: #427bb8;
-  }*/
+  }
+
+a {
+    color: rgb(102, 47, 15)
+}
+
+div a:visited {
+    color: #cc851c;
+}
+
+/*donation page*/
+
+div.contact-info{
+font-size: 18px;
+}
+div#linky{
+    margin-top: 30px;
+}
 button.back {
     color: #cc851c;
   }
+
 button.next {
    color: #f4f6f1;
   }
-  /*div.clearfix{
-    background-color: #666666;
-  }*/
-  
+input#submit2 :visited {
+    background-color: #427bb8;
+    color: white;
+    border: 5px solid #427bb8;
+}
 div.donate{
     margin: 15px 0px 14px;
     padding: 18px 0px 10px;
@@ -160,15 +179,6 @@ div.donate{
     border-right: 1px dotted #2a4f76;
     font-size: 18px;
   }
-  /*.donate-buttons>li>a {
-    font-size: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bold;
-    position: relative;
-    display: block;
-    padding: 10px 3px;
-    border-radius: 5px;
-  }*/
 
   .btn-blue-other,
   .btn-blue {
@@ -197,18 +207,12 @@ div.donate{
     margin-top: 8px;
   }
   
- /* .impact {
-    font-size: 1.1em;
-    font-weight: bold;
-    clear: both;
-  }*/
-
   nav>li>a:hover, nav>li>a:focus {
     text-decoration: none;
     background-color: transparent;
   }
 
-  .donate-buttons .active {
+  button:active {
     background-color: #fff;
     border: 5px solid #427bb8;
     color: #427bb8;
@@ -217,7 +221,8 @@ div.donate{
   button#btn1:focus {
   outline: -webkit-focus-ring-color auto 0px;
   }
-  .donate-buttons li:last-child {
+
+  button li:last-child {
     font-size: 17px;
     line-height: 37px;
     padding-left: 20px;
@@ -225,46 +230,34 @@ div.donate{
   }
 
 /* Footer */
-
-container{ 
+container { 
     background-color: black;
-    padding: 
+    margin-top:500px;
 }
 
 footer{
-    background: rgb(16, 14, 17);
+    background: black;
     height: auto;
-    width: 100vw;
+    width: 97vw;
     padding: 25px;
-   
+    color: white;
 }
 
 div.footer-content{
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: rgb(4, 4, 4);
+    background: black;
     color: rgb(234, 220, 220);
-    backgrou
-    
-}
-
-div.footer-h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 28px;
-    font-size: 14px;
-    background: rgb(10, 10, 11) !important;
-    
+    margin: 35px;
 }
 
 div.footer-bottom{
     background: rgb(7, 8, 7);
     width: 100vw;
-    padding: 20px 0;
     align-items: center;
     color: white;
 }
@@ -276,13 +269,12 @@ div.footer-bottom p{
     display: flex;
     background:rgb(8, 8, 9);
     text-align: center;
-      
 }
-div.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
+
+div.footer-bottom em{
+   background: black; 
 }
+
 
 /* this is the width of webpage I was going off of-
     width: 4750px;
